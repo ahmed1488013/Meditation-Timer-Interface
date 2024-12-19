@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e6e8fa; /* Soft Lavender */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: #333;
+}
+
+.timer-container {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+}
+
+/* تخصيص تنسيق الحقل الإدخال */
+.time-input {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.time-input label {
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  color: #333;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.time-input input[type="number"] {
+  font-family: "Arial", sans-serif;
+  font-size: 18px;
+  padding: 8px;
+  width: 100px;
+  text-align: center;
+  border: 2px solid #4682b4; /* أزرق فولاذي للحدود */
+  border-radius: 5px;
+  background-color: #fff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* تأثير التمرير على الحقل */
+.time-input input[type="number"]:focus {
+  border-color: #8b4513; /* اللون البني الفاتح عند التركيز */
+  box-shadow: 0 0 5px rgba(139, 69, 19, 0.5);
+  outline: none;
+}
+
+/* ضبط الحقل ليكون أكثر تناسقًا في الشاشات الصغيرة */
+@media screen and (max-width: 600px) {
+  .time-input {
+    margin: 10px;
+  }
+
+  .time-input input[type="number"] {
+    width: 80%;
+    font-size: 16px;
+  }
+}
+
+h1 {
+  color: #4682b4; /* Steel Blue */
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.timer-display {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  color: #4682b4; /* Steel Blue */
+  margin: 30px 0;
+}
+
+.controls {
+  margin-top: 30px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.btn-start-stop {
+  background-color: #8b4513; /* Sienna */
+  color: white;
+}
+
+.btn-reset {
+  background-color: #4682b4; /* Steel Blue */
+  color: white;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.sound-selection {
+  margin-top: 20px;
+}
+
+label {
+  font-size: 16px;
+  color: #4682b4; /* Steel Blue */
+}
+
+select {
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .timer-display {
+    font-size: 36px;
+  }
+
+  button {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+}
